@@ -1,0 +1,94 @@
+.testimonials {
+  min-height: 50vh;
+  background: url('{{site.baseurl}}/images/hockey-goalie.jpg') center / cover no-repeat;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+}
+
+.testimonials .max-length {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--color-primary);
+  opacity: .85;
+  z-index: 0;
+}
+
+.testimonials-overlay.black {
+  background-color: #000;
+}
+
+.testimonials cite {
+  font-style: normal;
+}
+
+.testimonials cite span {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.testimonials blockquote {
+  margin-bottom: 2.6rem;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 36em;
+  width: 100%;
+  display: none;
+}
+
+.testimonials .next-previous li a {
+  color: var(--color-primary);
+  transition:
+    color .25s;
+}
+
+.testimonials .next-previous li a:hover {
+  color: #fff;
+}
+
+.testimonials .next-previous {
+  position: absolute;
+  bottom: 1.3rem;
+  max-width: 52em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .testimonials blockquote {
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 45em) {
+
+  .testimonials .next-previous {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .testimonials .next-previous li a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  .testimonials .next-previous li:last-child a {
+    left: auto;
+    right: 0;
+  }
+
+}

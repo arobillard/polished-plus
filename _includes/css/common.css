@@ -1,0 +1,61 @@
+:root {
+  --color-primary: #09A38C;
+  --color-primary-dark: #067c6a;
+  --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
+}
+
+html {
+  font-family: Ubuntu, sans-serif;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ---------- Colors ---------- */
+
+.text-fff {
+  color: #fff;
+}
+
+.text-000 {
+  color: #000;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-lg {
+  background-color: #f2f2f2;
+}
+
+.hero {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat;
+}
+
+.grid-logos img {
+  height: 2rem;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .grid-logos img {
+    height: 3rem;
+  }
+
+}

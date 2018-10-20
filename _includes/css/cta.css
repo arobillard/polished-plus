@@ -1,0 +1,40 @@
+.cta {
+  min-height: 18em;
+  background: url('{{site.baseurl}}/images/soccer-banner-bw.jpg') center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.cta .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--color-primary);
+  opacity: .85;
+  z-index: 0;
+}
+
+.cta-overlay.black {
+  background-color: #000;
+}
+
+.btn-ghost.white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-ghost.white:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: var(--color-primary);
+}

@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+.footer .logo-main,
+.footer #logo-main-symbol {
+  color: #fff;
+}
+
+.footer a:not(.btn) {
+  color: #fff;
+  text-decoration: none;
+  transition:
+    opacity .25s;
+}
+
+.footer a:not(.btn):hover {
+  opacity: .75
+}
+
+.footer li li:nth-child(3),
+.footer li li:nth-child(4) {
+  display: none;
+}
+
+
+
+@media only screen and (min-width: 38em) {
+
+  .footer {
+    text-align: left;
+  }
+
+  .footer .unit:last-child {
+    text-align: right;
+  }
+
+}

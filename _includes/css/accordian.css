@@ -1,0 +1,41 @@
+.accordian-unit {
+  border-bottom: 2px solid #ddd;
+}
+
+.accordian-label {
+  font-weight: bold;
+  color: var(--color-primary);
+  position: relative;
+  cursor: pointer;
+}
+
+.accordian-label,
+.accordian-content {
+  padding-right: 1.3rem;
+}
+
+.accordian-content {
+  overflow: hidden;
+  height: 0;
+  transition:
+    height .25s;
+}
+
+.accordian-label.open + .accordian-content {
+  height: auto;
+}
+
+.accordian-label .icon {
+  transition:
+    transform .25s,
+    color .25s;
+  color: #ccc;
+}
+
+.accordian-label:hover .icon {
+  color: #666;
+}
+
+.accordian-label.open .icon {
+  transform: translateY(-50%) rotate(45deg);
+}

@@ -1,0 +1,116 @@
+.grid-sign-up > .unit {
+  min-height: 100vh;
+}
+
+.grid-sign-up > .unit:first-child {
+  border-bottom: 2rem solid var(--color-primary);
+}
+
+.sign-up-form {
+  background-color: #fff;
+}
+
+.sign-up-prev.max-length {
+
+}
+
+@media only screen and (max-width: 37.99em) {
+
+  .sign-up-form {
+    min-height: calc(100vh - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-up-form > div {
+    width: 100%;
+    max-width: 25em;
+  }
+
+  .sign-up-form .btn {
+    padding: .25em 2em .3em;
+  }
+
+}
+
+.sign-up-form h1 {
+  color: #000;
+  text-transform: none;
+}
+
+.sign-up-form small span {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  height: auto;
+}
+
+input:not([type="checkbox"]), input:not([type="radio"]) {
+  padding: .4rem .75rem;
+  margin-bottom: .65rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .grid-sign-up .unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-up-form {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .15);
+    max-width: 25em;
+  }
+
+  input:not([type="checkbox"]), input:not([type="radio"]) {
+    padding: .2rem .75rem;
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .grid-sign-up {
+    min-height: 100vh;
+  }
+
+  .grid-sign-up > .unit:first-child {
+    padding: 1.5rem;
+    border: none;
+  }
+
+}
+
+@media only screen and (max-width: 60em) {
+
+  .sign-up-logo .logo-main {
+    color: #000;
+  }
+
+  .sign-up-logo .logo-main #logo-main-symbol {
+    color: var(--color-primary);
+  }
+
+}
