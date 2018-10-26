@@ -39,9 +39,8 @@
   text-transform: none;
 }
 
-.sign-up-form small span {
+.sign-up-form small a {
   font-weight: bold;
-  color: var(--color-primary);
 }
 
 fieldset {
