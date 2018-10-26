@@ -1,0 +1,15 @@
+.hero-platform {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{site.baseurl}}/images/hero-platform.jpg") center left / cover no-repeat;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .grid-tour .unit {
+    margin-bottom: 3rem;
+  }
+
+  .grid-tour-text {
+    padding: 3rem;
+  }
+
+}

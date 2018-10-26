@@ -18,7 +18,7 @@
   overflow: hidden;
   height: 0;
   transition:
-    height .25s;
+    height .25s cubic-bezier(.75, 0, .25, 1);
 }
 
 .accordian-label.open + .accordian-content {
@@ -27,12 +27,13 @@
 
 .accordian-label .icon {
   transition:
-    transform .25s,
-    color .25s;
+    transform .25s cubic-bezier(.75, 0, .25, 1),
+    color .25s cubic-bezier(.75, 0, .25, 1);
   color: #ccc;
 }
 
-.accordian-label:hover .icon {
+.accordian-label:hover .icon,
+.open .icon {
   color: #666;
 }
 

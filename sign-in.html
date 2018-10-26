@@ -1,0 +1,31 @@
+---
+layout: sign-up-in
+title: Sign In
+---
+<div>
+  <h1 class="peta push-0 gutter pad-t">Sign In</h1>
+  <form class="push-1-2" method="post" action="POST">
+    <fieldset class="island-1-2">
+      <div class="grid">
+        <div class="unit [ xs-1 ] island-1-2">
+          <label class="hidden" for="email">Email</label>
+          <input class="milli" type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="unit [ xs-1 ] island-1-2">
+          <label class="hidden" for="password">Password</label>
+          <input class="milli" type="password" id="password" name="password" placeholder="Password">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="gutter pad-b">
+      <div class="push">
+        <input class="milli" type="checkbox" id="remember-password" name="remember-password">
+        <label class="milli" for="remember-password">Keep me signed in.</label>
+      </div>
+      <div>
+        <button class="btn" type="submit">Submit</button>
+      </div>
+    </fieldset>
+    <p class="gutter milli">Don't have an account? <a class="no-under" href="{{site.baseurl}}/sign-up/">Sign Up</a></p>
+  </form>
+</div>

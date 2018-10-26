@@ -11,4 +11,6 @@
 {% include css/footer.css %}
 {% include css/sign-up.css %}
 {% include css/pricing.css %}
+{% include css/contact.css %}
 {% include css/accordian.css %}
+{% include css/platform.css %}

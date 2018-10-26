@@ -62,14 +62,23 @@ textarea {
   height: auto;
 }
 
-input:not([type="checkbox"]), input:not([type="radio"]) {
+textarea {
+  border-radius: 25px;
+}
+
+input:not([type="checkbox"]), input:not([type="radio"]), textarea {
   padding: .4rem .75rem;
   margin-bottom: .65rem;
 }
 
+[type="checkbox"] + label::before {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 @media only screen and (min-width: 38em) {
 
-  .grid-sign-up .unit {
+  .grid-sign-up .unit:not(.xs-0) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,6 +100,12 @@ input:not([type="checkbox"]), input:not([type="radio"]) {
 }
 
 @media only screen and (min-width: 60em) {
+
+  .grid-sign-up .unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .grid-sign-up {
     min-height: 100vh;

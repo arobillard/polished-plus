@@ -49,7 +49,7 @@
 .testimonials .next-previous li a {
   color: var(--color-primary);
   transition:
-    color .25s;
+    color .25s cubic-bezier(.75, 0, .25, 1);
 }
 
 .testimonials .next-previous li a:hover {

@@ -1,19 +1,15 @@
 .masthead {
   position: fixed;
   width: 100%;
-  /* background-color: #fff;
-  box-shadow: var(--shadow-primary); */
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
   transition:
-    background-color .25s,
-    box-shadow .25s;
+    background-color .25s cubic-bezier(.75, 0, .25, 1),
+    box-shadow .25s cubic-bezier(.75, 0, .25, 1);
   z-index: 10000;
 }
 
 .masthead.sticky {
-  /* background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0); */
   background-color: #fff;
   box-shadow: var(--shadow-primary);
 }
@@ -26,13 +22,14 @@
   width: 7.5rem;
   color: #fff;
   transition:
-    color .25s;
+    color .25s cubic-bezier(.75, 0, .25, 1);
 }
 
 .masthead #logo-main-symbol {
   fill: var(--color-primary);
 }
 
+.contact .masthead .logo-main,
 .pricing .masthead .logo-main,
 .masthead.sticky .logo-main {
   color: #000;
@@ -61,9 +58,9 @@
   left: 50%;
   transform: translate(-50%, 0);
   transition:
-    transform .25s,
-    top .25s,
-    bottom .25s;
+    transform .25s cubic-bezier(.75, 0, .25, 1),
+    top .25s cubic-bezier(.75, 0, .25, 1),
+    bottom .25s cubic-bezier(.75, 0, .25, 1);
 }
 
 .tog-top {
@@ -132,7 +129,7 @@
     background-color: #fff;
     overflow: hidden;
     transition:
-      height .25s;
+      height .25s cubic-bezier(.75, 0, .25, 1);
     display: flex;
     flex-direction: column;
     font-size: 1.2656rem;
@@ -179,6 +176,7 @@
     position: relative;
   }
 
+  .contact .masthead .header-nav a:not(.btn),
   .pricing .masthead .header-nav a:not(.btn),
   .masthead.sticky .header-nav a:not(.btn) {
     color: #000;
