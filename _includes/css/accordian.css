@@ -16,13 +16,13 @@
 
 .accordian-content {
   overflow: hidden;
-  height: 0;
+  max-height: 0;
   transition:
-    height .25s cubic-bezier(.75, 0, .25, 1);
+    max-height .25s cubic-bezier(.75, 0, .25, 1);
 }
 
 .accordian-label.open + .accordian-content {
-  height: auto;
+  max-height: 11.3rem;
 }
 
 .accordian-label .icon {
@@ -39,4 +39,22 @@
 
 .accordian-label.open .icon {
   transform: translateY(-50%) rotate(45deg);
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  .accordian-label.open + .accordian-content {
+    max-height: 6.8545454545rem;
+  }
+
+}
+
+
+@media only screen and (min-width: 60em) {
+
+  .accordian-label.open + .accordian-content {
+    max-height: 6rem;
+  }
+
 }
