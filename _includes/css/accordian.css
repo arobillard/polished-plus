@@ -6,7 +6,8 @@
   font-weight: bold;
   color: var(--color-primary);
   position: relative;
-  cursor: pointer;
+  text-decoration: none;
+  display: block;
 }
 
 .accordian-label,

@@ -76,7 +76,7 @@ $('.testimonials .previous').on('click', function (e) {
   }
 });
 
-$('.accordian-label').on('click', function() {
-  // $('.accordian-label.open').removeClass('open');
+$('.accordian-label').on('click', function(e) {
+  e.preventDefault();
   $(this).toggleClass('open');
 });
