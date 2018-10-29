@@ -1,5 +1,5 @@
 .testimonials {
-  min-height: 50vh;
+  min-height: 70vh;
   background: url('{{site.baseurl}}/images/hockey-goalie.jpg') center / cover no-repeat;
   /* display: flex;
   align-items: center; */
@@ -64,6 +64,10 @@
 }
 
 @media only screen and (min-width: 38em) {
+
+  .testimonials {
+    min-height: 50vh;
+  }
 
   .testimonials blockquote {
     margin-bottom: 0;
