@@ -1,4 +1,4 @@
-markdown: redcarpet
 baseurl: /polished-plus
 exclude: ['README.md']
 permalink: pretty
+port: 4002
